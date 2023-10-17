@@ -7,8 +7,8 @@ myButton.addEventListener('click', () => {
         let memeName = response.data
         myDiv.innerHTML = ''
         
-        let newM = document.createElement('p')
-        newM.innerHTML = memeName
+        let newM = document.createElement('img')
+        newM.setAttribute('src', memeName) 
         myDiv.appendChild(newM)
     })
     .catch((err) => {
